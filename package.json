@@ -1,0 +1,14 @@
+{
+    "name": "mern-stack-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "client": "npm start --prefix client",
+      "server": "npm run dev --prefix server",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "devDependencies": {
+      "concurrently": "^7.0.0"
+    }
+  }
+  
