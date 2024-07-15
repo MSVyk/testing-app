@@ -6,7 +6,7 @@ import store from './store';
 // import Alert from './components/Alert';
 // import NotFound from './components/NotFound';
 import HomePage from './homePage';
-// import ProfilePage from './profile';
+import ProfilePage from './profile';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} /> */}
-          <Route path="profile/:id" element={<ProfilePage />} />
+          <Route path="profile/" element={<ProfilePage />} />
           {/* <Route
             path="create-profile"
             element={<PrivateRoute component={ProfileForm} />}
