@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('Here I am your first running API!'); // <<< this line have been modified for testing purposes
+  res.send('Here I am your first running APIXXX!'); // <<< this line have been modified for testing purposes
 });
 
 // Start server
