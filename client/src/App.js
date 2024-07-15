@@ -12,8 +12,8 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <Navbar />
-        <Alert />
+        {/* <Navbar />
+        <Alert /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* <Route path="register" element={<Register />} />
