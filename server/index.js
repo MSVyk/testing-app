@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('./db'); // Import the database connection
 
 const app = express();
-const port = 6000;
+const port = 5000;
 
 // Middleware
 app.use(express.json());
