@@ -1,8 +1,7 @@
-import React from 'react';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/HomePage/';
-import ProfilePage from './components/ProfilePage'; // Corrected this line
+import HomePage from './components/homePage';
+import ProfilePage from './components/profilePage'; // Corrected this line
 
 function App() {
   return (
