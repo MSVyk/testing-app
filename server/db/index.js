@@ -1,14 +1,25 @@
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-// // Connect to MongoDB (replace with your MongoDB URI)
-// mongoose.connect('mongodb://mongo:27017/mern-app', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
-// .then(() => console.log('MongoDB connected'))
-// .catch(err => {
-//   console.error('MongoDB connection error:', err);
-//   process.exit(1); // Optional: Exit the process if unable to connect
-// });
+// Load environment variables
+dotenv.config();
 
-// module.exports = mongoose;
+const connectDB = async () => {
+  try {
+    console.log(process.env.MONGO_URI + "<<<<<<<<<<<<<<<<<<<<<<<<<<")
+    mongoose.set('strictQuery', true);
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+      dbName: 'test'
+    });
+    console.log('MongoDB connected');
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1); // Exit process with failure
+  }
+};
+
+module.exports = connectDB;

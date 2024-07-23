@@ -18,10 +18,11 @@ RUN npm config set network-timeout 600000 && npm install
 
 # Copy the rest of the server code
 COPY . .
+# Copy the .env file
+COPY .env .env
 
 # Expose the port the server will run on
 EXPOSE 8080
 
 # Command to run the server
 CMD [ "npm", "start" ]
-
