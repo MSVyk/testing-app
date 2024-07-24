@@ -1,7 +1,7 @@
 # Other entries
 node_modules/
 dist/
-.env
+server/.env
 
 # Ignore the html5up-massively directory
 client/src/html5up-massively/
