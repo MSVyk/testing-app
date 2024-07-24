@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/homePage';
-import ProfilePage from './components/profilePage'; // Corrected this line
+import ProfilePage from './components/profilePage'; // Corrected this lineimport
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </header> */}
       <HomePage/>
       {/* <ProfilePage/> */}
+      {/* <Footer/> */}
     </div>
   );
 }
