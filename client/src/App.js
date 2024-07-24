@@ -6,9 +6,9 @@ import ProfilePage from './profile';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <h1>Welcome to MERN App</h1>
-      </header>
+      </header> */}
       <HomePage/>
       <ProfilePage/>
     </div>
