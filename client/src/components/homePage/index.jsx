@@ -38,7 +38,7 @@ const HomePage = () => {
       </nav>
       <div className="jumbotron">
         <div className="container text-center">
-          <h1>my page</h1>
+          <h1>my pageeeeee</h1>
           <p>Some text that represents "You"...</p>
         </div>
       </div>
