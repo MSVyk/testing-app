@@ -29,6 +29,7 @@ const HomePage = () => {
               <li><a href="#">About</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Contact</a></li>
+              <li><a href="#">Register</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -38,7 +39,7 @@ const HomePage = () => {
       </nav>
       <div className="jumbotron">
         <div className="container text-center">
-          <h1>My Portfolio</h1>
+          <h1>Khoa Nguyen</h1>
           <p>Some text that represents "You"...</p>
         </div>
       </div>
