@@ -1,0 +1,107 @@
+#lightbox {
+    position: relative;
+    width: 960px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lightbox h1#lbTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    margin: 0 0 20px 0;
+}
+
+#lightbox #lbPrev, #lightbox #lbNext {
+    position: absolute;
+    width: 5%;
+    height: 30px;
+    color: #F3EF8F;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+    user-select: none;
+}
+
+#lightbox #lbPrev:hover, #lightbox #lbNext:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#lightbox #lbPrev {
+    left: 0px;
+}
+
+#lightbox #lbNext {
+    right: 0px;
+}
+
+#lightbox #lbCounter {
+    position: absolute;
+    z-index: 1;
+    width: 70px;
+    height: 26px;
+    line-height: 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    top: 10px;
+    left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    padding: 3px;
+    user-select: none;
+}
+
+#lightbox #lbImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px; /* adds space between images and play button */
+}
+
+#lightbox #lbPlay {
+    text-align: center;
+    font-size: 2.2em;
+    width: 40px;
+    text-shadow: 3px 3px 20px black;
+    cursor: pointer;
+    user-select: none;
+    filter: grayscale(1);
+    margin-top: 10px; /* ensures the play button is below the images */
+}
+
+#lightbox #lbPlay:hover {
+    filter: grayscale(0.6) hue-rotate(120deg);
+}
+
+#lbImages img {
+    display: block;
+    width: 230px;
+    height: auto;
+    margin-right: 13px;
+    filter: opacity(0.8);
+    cursor: pointer;
+    outline: 2px solid #9C6908;
+    box-shadow: 3px 3px 10px black;
+    user-select: none;
+}
+
+  #lbImages img:hover {
+    filter: opacity(1);
+    transform: scale(1.05);
+  }
+  
